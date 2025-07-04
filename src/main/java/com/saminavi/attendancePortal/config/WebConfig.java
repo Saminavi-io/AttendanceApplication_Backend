@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.config;
+package com.saminavi.attendancePortal.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

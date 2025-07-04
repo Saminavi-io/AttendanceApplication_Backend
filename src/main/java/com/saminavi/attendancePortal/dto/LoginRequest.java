@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto;
+package com.saminavi.attendancePortal.dto;
 
 // Create simple DTO classes for request bodies (LoginRequest, RegistrationRequest)
 public class LoginRequest {

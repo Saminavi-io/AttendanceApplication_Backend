@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.service;
+package com.saminavi.attendancePortal.service;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Attendance;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository.AttendanceRepository;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository.EmployeeRepository;
+import com.saminavi.attendancePortal.domain.Attendance;
+import com.saminavi.attendancePortal.domain.Employee;
+import com.saminavi.attendancePortal.repository.AttendanceRepository;
+import com.saminavi.attendancePortal.repository.EmployeeRepository;
 
 @Service
 public class AttendanceService {

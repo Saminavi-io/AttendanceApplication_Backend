@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.config;
+package com.saminavi.attendancePortal.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

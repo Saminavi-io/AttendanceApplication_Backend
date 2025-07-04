@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.controller;
+package com.saminavi.attendancePortal.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt.JwtUtil;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto.LoginRequest;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto.LoginResponse;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto.RegistrationRequest;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmployeeService;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
+import com.saminavi.attendancePortal.config.security.jwt.JwtUtil;
+import com.saminavi.attendancePortal.domain.Employee;
+import com.saminavi.attendancePortal.dto.LoginRequest;
+import com.saminavi.attendancePortal.dto.LoginResponse;
+import com.saminavi.attendancePortal.dto.RegistrationRequest;
+import com.saminavi.attendancePortal.service.EmployeeService;
 
 @RestController
 @RequestMapping("/api/auth")

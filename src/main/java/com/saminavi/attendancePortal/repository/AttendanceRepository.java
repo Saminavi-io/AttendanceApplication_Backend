@@ -1,12 +1,12 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository;
+package com.saminavi.attendancePortal.repository;
 
 import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Attendance;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
+import com.saminavi.attendancePortal.domain.Attendance;
+import com.saminavi.attendancePortal.domain.Employee;
 
 public interface AttendanceRepository extends JpaRepository<Attendance, Long>{
 

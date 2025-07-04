@@ -1,11 +1,12 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository;
+package com.saminavi.attendancePortal.repository;
 
 import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
+import com.saminavi.attendancePortal.domain.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {

@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.dto;
+package com.saminavi.attendancePortal.dto;
 
 public class LoginResponse {
     private String token;

@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.config.security.jwt; // Adjust package as needed
+package com.saminavi.attendancePortal.config.security.jwt; // Adjust package as needed
 
 import java.io.IOException;
 
@@ -7,18 +7,18 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmployeeService; // Assuming EmployeeService implements UserDetailsService
+import com.saminavi.attendancePortal.service.EmployeeService;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {

@@ -1,7 +1,5 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.controller;
+package com.saminavi.attendancePortal.controller;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Attendance;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.AttendanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +10,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.saminavi.attendancePortal.domain.Attendance;
+import com.saminavi.attendancePortal.service.AttendanceService;
 
 @RestController
 @RequestMapping("/api/attendance") // Base path for attendance endpoints

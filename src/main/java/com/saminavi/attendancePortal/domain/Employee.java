@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain;
+package com.saminavi.attendancePortal.domain;
 
 
 

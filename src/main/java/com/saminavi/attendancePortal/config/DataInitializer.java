@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.config;
+package com.saminavi.attendancePortal.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,8 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository.EmployeeRepository;
+import com.saminavi.attendancePortal.domain.Employee;
+import com.saminavi.attendancePortal.repository.EmployeeRepository;
 
 @Component
 public class DataInitializer implements CommandLineRunner {

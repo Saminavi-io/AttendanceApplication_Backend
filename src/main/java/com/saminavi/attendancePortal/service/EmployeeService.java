@@ -1,4 +1,4 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.service;
+package com.saminavi.attendancePortal.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +13,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.repository.EmployeeRepository;
+import com.saminavi.attendancePortal.domain.Employee;
+import com.saminavi.attendancePortal.repository.EmployeeRepository;
 
 @Service
 public class EmployeeService implements UserDetailsService {

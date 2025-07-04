@@ -1,16 +1,20 @@
-package com.saminavi.attendancePortal.SaminaviAttendanceApplication.controller;
+package com.saminavi.attendancePortal.controller;
 
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.domain.Employee;
-import com.saminavi.attendancePortal.SaminaviAttendanceApplication.service.EmployeeService;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-import java.util.Optional;
+import com.saminavi.attendancePortal.domain.Employee;
+import com.saminavi.attendancePortal.service.EmployeeService;
 
 @RestController
 @RequestMapping("/api/employees")
